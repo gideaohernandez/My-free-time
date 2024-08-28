@@ -1,0 +1,52 @@
+.My Code{
+    height: 57px;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.Container{
+    height: 270px;
+    width: 200px;
+    display: grid;
+    place-items: center;;
+    position: relative;
+    border-radius: 10px;
+    background-color: #39393f;
+    
+}
+
+.Container h1{
+    color: aliceblue;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+.Container::before{
+    content: "";
+    position:absolute;
+    top: -3.px;
+    height: 290px;
+    left: -2.9px;
+    width: 210px;
+    border-radius: 9px;
+    background: linear-gradient(#1e9600,#fff200,#ff0000);
+    z-index: -1;
+    animation: animate 5s linear infinite;
+}
+@keyframes animate{
+    0%{
+        filter: hue-rotate(360deg) brightness(100%) blur(10px);
+    }
+    100%{
+        filter: hue-rotate(-360deg) brightness(100%) blur(10px);
+    }
+
+    body{
+        
+        color: #fff;
+        background: linear-gradient(200deg,black);
+    }
+
+
+}
